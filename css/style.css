@@ -1,0 +1,674 @@
+/* ---------------------------------
+  Base Element Styles
+------------------------------------ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+	line-height: 1.6;
+	color: #2b2b29;
+
+/* ---- Flexbox Sticky Footer ---- */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+p {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 1em;
+	margin-bottom: 1.8em;
+}
+
+li {
+  padding-bottom: 5px;
+}
+
+h1 {
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 500;
+}
+
+h2,
+a {
+	font-family: 'Varela Round', sans-serif;
+	color: #1c477c;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+span {
+	font-size: 1.1em;
+}
+
+h3 {
+  color: #2b2b29;
+	font-family: 'Varela Round', sans-serif;
+	font-size: 1.1em;
+}
+
+.title {
+	margin: 0;
+}
+
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+h4 {
+	color: rgb(154, 166, 181);
+	font-style: italic;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	color: #1c477c;
+	font-family: 'Source sans pro', sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	text-decoration: none;
+	border-bottom: solid 1px;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul.description,
+ul.cv-description,
+ul.contact-description {
+  font-size: 1em;
+	margin-bottom: 1.8em;
+}
+
+ul.description {
+	list-style: inherit;
+	padding-left: 1em;
+}
+
+ul.cv-description,
+ul.contact-description a {
+	color: rgb(154, 166, 181);
+}
+
+ul.contact-description a {
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.italic {
+	font-style: italic;
+}
+
+/* ---------------------------------
+  Base Layout Styles
+------------------------------------ */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+  display: block;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.main-nav a {
+  font-size: .95em;
+  color: #9aa6b5;
+  text-transform: uppercase;
+}
+
+.main-nav a.selected {
+  color: #f4c058;
+}
+
+.main-nav a:hover {
+  color: #c2ccd3;
+}
+
+#copyright {
+  font-size: 1em;
+}
+
+
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+}
+
+.banner,
+.main-footer {
+	text-align: center;
+}
+
+.about-banner {
+  background: #f4c058;
+}
+
+.cv-banner {
+  background: rgba(185, 217, 234, .8)
+}
+
+.portfolio-banner {
+  background: rgba(154, 166, 181, .7)
+}
+
+.contact-banner {
+   background: rgba(28, 72, 124, .9)
+}
+
+.banner {
+	color: #fff;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
+}
+
+.col,
+.intro {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #e8e9ea;
+	padding: 2em 0;
+	margin-top: 40px;
+}
+
+/* ---- Page Elements ---- */
+
+/* circle badges */
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.tagline {
+	font-style: italic;
+	letter-spacing: .1px;
+}
+
+.social-icons li {
+  display: inline-block;
+  text-align: center;
+  clear: both;
+  padding-top: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  padding: 3px;
+}
+
+
+/* ---------------------------------
+  Page: CV
+------------------------------------ */
+
+.wrap {
+  box-sizing: border-box;
+	width: 90%;
+	border-radius: 30px;
+	background: #e8e9ea;
+	margin-top: 5px;
+	margin-bottom: 18px;
+}
+
+.prog-bar {
+	height: 4px;
+	border-radius: 30px;
+	background: #1c477c;
+  animation: slide 3s linear;
+}
+
+.percentage-1 {
+	width: 80%;
+}
+
+.percentage-2 {
+	width: 70%;
+}
+
+.percentage-3 {
+	width: 80%;
+}
+
+.percentage-4 {
+	width: 70%;
+}
+
+.percentage-5 {
+	width: 10%;
+}
+
+.percentage-6 {
+	width: 70%;
+}
+
+.percentage-7 {
+	width: 60%;
+}
+
+.percentage-5 {
+		animation: sweep 5s linear;
+}
+
+@keyframes slide {
+  0% { width: 0%; }
+  10% { width: 18%; }
+  25% { width: 25%; }
+}
+
+@keyframes sweep {
+  0% { width: 0%; }
+  10% { width: 10%; }
+}
+
+/* ---------------------------------
+  Page: Portfolio
+------------------------------------ */
+
+.portfolio-title,
+.project {
+  color: #fff;
+}
+
+.project p {
+  margin: 0;
+}
+
+.project {
+  text-align: center;
+  padding: 11% 10%;
+  margin: 0 .5em 30px;
+  border-radius: 3px;
+}
+
+.box {
+  -webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+#waitrose {
+	background: linear-gradient(
+							rgba(28, 72, 124, .8),
+							rgba(28, 72, 124, .8)),
+							url('../img/waitrose-weekly-rota-1.png') no-repeat center;
+	background-size: 200%;
+}
+
+#rainbow {
+   background: linear-gradient(
+               rgba(28, 72, 124, .8),
+               rgba(28, 72, 124, .8)),
+               url('../img/rainbow-pc-cropped.png') no-repeat center;
+   background-size: 180%;
+}
+
+#grdtrust {
+   background: linear-gradient(
+               rgba(28, 72, 124, .8),
+               rgba(28, 72, 124, .8)),
+               url('../img/course-poster.png') no-repeat center;
+}
+
+#rosana {
+	background: linear-gradient(
+							rgba(28, 72, 124, .8),
+							rgba(28, 72, 124, .8)),
+							url('../img/rosana-desktop-mockup.jpg') no-repeat center;
+	background-size: 260%;
+}
+
+
+#programming {
+	background: linear-gradient(
+							rgba(28, 72, 124, .8),
+							rgba(28, 72, 124, .8)),
+							url('../img/programming-banner-1.png') no-repeat center;
+}
+
+#hairloss {
+	background: linear-gradient(
+							rgba(28, 72, 124, .8),
+							rgba(28, 72, 124, .8)),
+							url('../img/clinic-how-it-works.png') no-repeat center;
+	background-size: 110%;
+}
+
+#waitrose:hover,
+#rainbow:hover,
+#grdtrust:hover,
+#rosana:hover,
+#programming:hover,
+#hairloss:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------------------------
+  Pages: Project
+------------------------------------ */
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.callout {
+  color: #9aa6b5;
+  padding: 0 10px;
+  margin: 30px 1.5em 10px;
+  display: inline-block;
+}
+
+.callout:hover {
+  color: #bcc5ce;
+}
+
+.button {
+  color: #fff;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+  background-color: #b9d9ea;
+  padding: 11px 25px;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: #d8eaf3;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+  margin: 50px 0 40px;
+}
+
+.centered {
+  text-align: center;
+  width: 100%;
+}
+
+.p-space {
+	padding-bottom: 20px;
+}
+
+.three-column {
+	width: 33.1%;
+	display: inline-block;
+}
+
+.two-column {
+	width: 49%;
+	display: inline-block;
+	padding-right: 2.5%;
+	vertical-align: text-top;
+}
+
+.project-info,
+.related-projects {
+	text-align: left;
+}
+
+.quote {
+	font-size: 1.1em;
+	font-family: 'Varela round', sans-serif;
+	font-style: italic;
+	padding: 2% 20%;
+}
+
+/* ---- Image slider ---- */
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; }
+div#slider { overflow: hidden; }
+div#slider figure img { width: 20%; float: left; }
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 50s slidy infinite;
+}
+
+
+/* ---------------------------------
+  Page: Contact
+------------------------------------ */
+
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a {
+  display: block;
+  min-height: 20px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0 10px;
+  color: #f5c058;
+}
+
+.contact-info a:hover {
+  color: #fcd38b;
+}
+
+.contact-info li.mail a {
+  background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+  background-image: url('../img/twitter.png');
+}
+
+.contact-info li.linkedin a {
+  background-image: url('../img/linkedin.png');
+}
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+    height: 0;
+		clear: both;
+	}
+
+
+/* ---------------------------------
+  Media Queries
+------------------------------------ */
+
+@media (min-width: 1025px) {
+
+	.container {
+		width: 80%;
+		max-width: 1150px;
+	}
+
+	.primary {
+		width: 30%;
+	}
+
+	.secondary {
+		width: 70%;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		width: 33.3%;
+	}
+
+	.text-blocks {
+		display: flex;
+	}
+
+	.line-separator {
+		height: 1330px;
+		width: 2px;
+		border-radius: 5px;
+		background: #e8e9ea;
+		margin-left: 10px;
+		margin-right: 20px;
+	}
+
+  .first {
+    width: 65%;
+  }
+
+  .second {
+    width: 35%;
+	}
+}
+
+@media (min-width: 769px) {
+
+	body {
+    padding-top: 68px;
+  }
+
+  .main-header {
+    position: fixed;
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0,0,0,.4);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.name,
+	.col {
+		float: left;
+	}
+
+  .first {
+    width: 70%;
+  }
+
+  .second {
+    width: 30%;
+  }
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	#waitrose,
+	#rainbow,
+	#grdtrust,
+	#rosana,
+	#programming,
+	#hairloss {
+    width: 47%;
+    padding: 6% 5%;
+  }
+
+ #rainbow,
+ #rosana,
+ #hairloss {
+    float: right;
+  }
+
+  .social-icons {
+    float: right;
+  }
+
+  #copyright {
+    float: left;
+    padding-top: 20px;
+  }
+
+	.column-one,
+	.column-two {
+	  width: 50%;
+	}
+
+	.column-one {
+	  float: left;
+	}
+
+	.column-two {
+	  float: right;
+	}
+
+	.wrap {
+		width: 100%;
+	}
+}
+
+@media (max-width: 769px) {
+
+	.two-column {
+		width: 100%;
+		display: inline;
+		padding-right: 0%;
+		vertical-align: text-top;
+	}
+}
