@@ -9,7 +9,7 @@ h1 {
 
 h2 {
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -108,8 +108,8 @@ p {
 }
 
 .gutter {
-  padding-left: 8%;
-  padding-right: 8%;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 
 /* ---- Main Page Elements ---- */
@@ -306,7 +306,7 @@ footer {
 }
 
 .projects-gutter {
-  margin: 0 5%;
+  margin: 0 3%;
 }
 
 
@@ -330,12 +330,16 @@ footer {
 }
 
 .project-p-space {
-  padding: 9% 14% 5%;
+  padding: 10% 14%;
 }
 
 .project-p {
   font-size: 18px;
   line-height: 30px;
+}
+
+.p-space {
+  padding-bottom: 2%;
 }
 
 .related-projects p {
@@ -465,6 +469,13 @@ label {
   .navbar-default .navbar-nav > .active > a:focus {
     border: none;
   }
+  .row {
+    padding-bottom: 0px;
+  }
+  h1 {
+    padding-bottom: 35px;
+    margin-top: 16%;
+  }
   .footer-align,
   .copyright,
   .social-links,
@@ -486,10 +497,15 @@ label {
   .job-content {
     margin-top: 55px;
   }
+  .projects-gutter {
+    margin: 0;
+  }
 }
 
 /* ---- Extra Small ---- */
 
 @media (max-width: 480px) {
-
+  .projects-gutter {
+    margin: 0;
+  }
 }
