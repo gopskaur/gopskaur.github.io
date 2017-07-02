@@ -333,6 +333,10 @@ footer {
   padding: 10% 14%;
 }
 
+.project-p-space-end {
+  padding: 10% 14% 5%;
+}
+
 .project-p {
   font-size: 18px;
   line-height: 30px;
@@ -473,8 +477,11 @@ label {
     padding-bottom: 0px;
   }
   h1 {
-    padding-bottom: 35px;
+    padding-bottom: 0;
     margin-top: 16%;
+  }
+  .h-one-space {
+    padding-bottom: 35px;
   }
   .footer-align,
   .copyright,
